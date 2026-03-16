@@ -5,7 +5,8 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<p>Hi {{user.username }}! You are {{ user.age }} years old.</p>
+<p>Hi {{user.username }}! You are {{ user.age }} years old. </p>
+   <p> The site has been updated to use Bootstrap CSS and JavaScript!</p>
 <form action="{% url 'logout' %}" method="post">
     {% csrf_token %}
     <button type="submit">Log Out</button>
