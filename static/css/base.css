@@ -1,0 +1,12 @@
+/* static/css/base.css */
+
+.btn {
+  background-color: #1E3A8A;
+  border-color: #1E3A8A;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #162c63;
+  border-color: #162c63;
+}
