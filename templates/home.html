@@ -6,11 +6,14 @@
 {% block content %}
 {% if user.is_authenticated %}
 <p>Hi {{user.username }}! You are {{ user.age }} years old. </p>
-   <p> The site has been updated to use Bootstrap CSS and JavaScript!</p>
+   <p> The site has been updated to have a link to "View All Articles"</p>
 <form action="{% url 'logout' %}" method="post">
     {% csrf_token %}
     <button type="submit">Log Out</button>
 </form>
+<br/>
+<p><a class="btn btn-primary" href="{% url 'article_list' %}" role="button"</p>
+    View all articles</a></p>  <!-- Added this link -->
 {% else %}
 <p>You are not logged in</p>
 <a href="{% url 'login' %}">Log In</a>

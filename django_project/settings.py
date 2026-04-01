@@ -42,10 +42,13 @@ INSTALLED_APPS = [
     #Local - created by Adam S
     "accounts",
     "pages",
+    "articles",
     # 3rd party
     "crispy_forms",
     "crispy_bootstrap5",
 ]
+
+TIME_ZONE = "America/New_York"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
